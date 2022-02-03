@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+.campo {
+  background-color: green;
+  width: 700px;
+  height: 900px;
+  border: white solid 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+div {
+  border: white solid 5px;
+  margin: 0 auto;
+}
+.circulo_centro {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+.punto {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+}
+.areas {
+  width: 60%;
+  height: 20%;
+  border-top: 0;
+}
+.pequeña {
+  width: 50%;
+  height: 50%;
+  border-top: 0;
+}
+.areas:last-child {
+  transform: rotate(180deg);
+}
+.linea {
+  width: 100%;
+  position: absolute;
+  top: calc(50% - 2px);
+  border-color: white;
+  border-width: 2px;
+}
+.corner {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 0 100% 0 0;
+  border-left: 0;
+  border-bottom: 0;
+}
+.supIzq {
+  transform: rotate(90deg);
+}
+.infIzq {
+  bottom: 0;
+}
+.infDer {
+  bottom: 0;
+  right: 0;
+  transform: rotate(270deg);
+}
+.supDer {
+  right: 0;
+  transform: rotate(180deg);
+}
+.semicirculo {
+  position: absolute;
+  bottom: calc(20% - 2px);
+  left: calc(50% - 75px);
+  width: 150px;
+  height: 75px;
+  border-radius: 200px 200px 0 0;
+  border-bottom: 0;
+}
+.superior {
+  transform: rotate(180deg);
+  bottom: 0;
+  top: calc(20% - 2px);
+}
